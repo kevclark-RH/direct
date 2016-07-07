@@ -31,6 +31,7 @@
     </util:list>
     <!-- REST ENPOINT IMPLEMENTATION -->
     <bean class="org.payment.service.CustomerRestImpl" id="customerRestImplBean"/>
+    
     <cxf:rsServer address="http://localhost:9191/rest"
         id="customerRestService" loggingFeatureEnabled="true" serviceClass="org.payment.service.CustomerRestImpl">
         <cxf:providers>
@@ -90,7 +91,7 @@
         </route>
         
         <route>
-        <from uri="cxf:bean:customerRestService"/>
+        <from uri="cxfrs:bean:customerRestService"/>
         <log message="\n\ngot rest call\n\n"/>
         </route>
     </camelContext>
