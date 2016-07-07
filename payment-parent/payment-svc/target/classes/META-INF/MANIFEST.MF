@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1467924339898
+Build-Jdk: 1.7.0_79
+Built-By: kevclark
+Bundle-Description: Creates a web service using the WSDL contract first
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Fabric8 :: Quickstarts :: Camel CXF Contract First
+Bundle-SymbolicName: com.amexp.payment.svc
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.sun.mdm.index.webservice;uses:="javax.xml.bind.annot
+ ation,javax.xml.ws,javax.xml.bind,javax.xml.namespace,javax.jws,javax.x
+ ml.datatype";version="0.0.1.SNAPSHOT",org.payment.svc;uses:="javax.ws.r
+ s,com.sun.mdm.index.webservice,org.apache.camel";version="0.0.1.SNAPSHO
+ T"
+Import-Package: javax.jws,javax.ws.rs;version="[2.0,3)",javax.xml.bind,j
+ avax.xml.bind.annotation,javax.xml.datatype,javax.xml.namespace,javax.x
+ ml.ws,org.apache.camel;version="[2.13,3)",org.apache.cxf.jaxrs.provider
+ ;version="[2.7,3)"
+Tool: Bnd-1.50.0

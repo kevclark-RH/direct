@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.payment.svc.TestDirect
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.257 sec <<< FAILURE! - in org.payment.svc.TestDirect
+testCamelRoute(org.payment.svc.TestDirect)  Time elapsed: 2.966 sec  <<< ERROR!
+org.apache.camel.FailedToCreateRouteException: Failed to create route route1: Route(route1)[[From[cxf:bean:customerRestService]] -> [Log[\... because of Failed to resolve endpoint: cxf://bean:customerRestService due to: No bean could be found in the registry for: customerRestService of type: org.apache.camel.component.cxf.CxfEndpoint
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: cxf://bean:customerRestService due to: No bean could be found in the registry for: customerRestService of type: org.apache.camel.component.cxf.CxfEndpoint
+Caused by: org.apache.camel.NoSuchBeanException: No bean could be found in the registry for: customerRestService of type: org.apache.camel.component.cxf.CxfEndpoint
+
